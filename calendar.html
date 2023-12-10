@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="calendar, events, reminders, javascript, html, css, open source coding"
+    />
+    <link
+      rel="stylesheet"
+      href=https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.10/index.min.js
+      integrity="sha512-xCMh+IX6X2jqIgak2DBvsP6DNPne/t52lMbAUJSjr3+trFn14zlaryZlBcXbHKw8SbrpS0n3zlqSVmZPITRDSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="calendar_styles.css" />
+    <title>Calendar with Events</title>
+    <header>
+      <h1>Williamston Event Calendar</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="calendar.html">Event Calendar</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Account</a>
+              <div class="dropdown-content">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Register</a>
+              </div>
+            </li>
+        </ul>
+      </nav>
+    </header>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="events"></div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+    <script src="calendar_script.js"></script>
+  </body>
+</html>

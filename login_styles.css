@@ -1,0 +1,90 @@
+/* Styles specific to the Login page */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  
+  /* Main login section */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .login-section {
+    margin-bottom: 30px;
+  }
+  
+  .login-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .login-section form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .login-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .login-section form input[type="text"],
+  .login-section form input[type="password"] {
+    width: 200px;
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .login-section form input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .login-section form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Back to Homepage button */
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: #6eb5ff; /* Lighter shade of blue */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px; /* Smaller font size */
+    border-radius: 4px; /* Add some border radius for a rounded look */
+  }
+  
+  .back-button:hover {
+    background-color: #4288d0; /* Darker shade of blue on hover */
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
